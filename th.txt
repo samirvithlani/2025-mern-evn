@@ -1,0 +1,71 @@
+			REACT JS:
+Framework: exiting tech
+
+frontend :react js, angular,jquery...
+backend  :nodejs,spring,django-fastapi,
+
+MERN:   m mongo d
+	e express
+        r react
+        n nodejs
+
+framework , library
+
+react js --> lib:-- facebook : opensource
+
+cra:
+
+react js :: project : vite fm
+
+arch:
+MVC : model view controller : jsp servlet, .net core :
+facebook : php : 
+
+n tire arch :
+frontend : tech : diff
+backend : tech  : diff
+
+react js , node js , mongodb
+react js . node js ,java  , monfdb
+
+js: client browser
+server side : nodejs
+
+nodejs : install : node_module --> foders -->.js ->function...
+
+
+npm : node package manager:
+node_modules:
+
+
+SINGLE PAGE APPLICATION:
+
+
+
+c|D:
+  projects
+    2025-mern
+        cmd
+	 npm create vite
+	  projectname 
+	  react
+	  js
+	  
+   
+after projection.....
+cd learning25
+npm install : if you miss this it will throw vite not recgonized error
+code . |[vs code..]
+
+	cleanup app.jsx -->src
+	open terminal
+	 change profile to cmd
+	  start server : npm run dev
+		
+
+
+error: npm is not recgonized as internal or external command
+
+open cmd: npm install npm -g
+
+vite is not recgonized:
