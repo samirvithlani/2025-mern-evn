@@ -69,3 +69,15 @@ error: npm is not recgonized as internal or external command
 open cmd: npm install npm -g
 
 vite is not recgonized:
+
+
+netflix:
+
+
+custom component:
+
+function component: 16.x -->
+class component:
+
+function keyword
+arrow function : =>

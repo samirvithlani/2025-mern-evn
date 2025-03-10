@@ -1,18 +1,18 @@
   import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+//import './App.css'
+import {Header} from './components/Header'
+import Content from "./components/Content"
+import { Footer } from './components/Footer'
 
 function App() {
   
-
   return (
    <div>
-      <h1>HELLO ALL</h1>
-      <h2>Every tag must have closing tag in react js</h2>
-      <h2>At a time we can return only 1 element and 1 element should return</h2>
-      <h3>whatever has been written inside return will display on browser..</h3>
-      
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
    </div>
   )
 }
