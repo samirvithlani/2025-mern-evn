@@ -9,11 +9,18 @@ export default function Content() {
     age: 24,
   };
 
+  const contentStyle = {
+    textAlign: "center",
+    height: "auto",
+    width: "auto",
+    backgroundColor: "GrayText",
+  };
+
   return (
-    <div>
+    <div style={contentStyle}>
       <h1>COTENT COMPONENT</h1>
       <h1>HELLO ALL</h1>
-      <h2>Every tag must have closing tag in react js</h2>
+      <h2 style={{color:"red"}}>Every tag must have closing tag in react js</h2>
       <h2>
         At a time we can return only 1 element and 1 element should return
       </h2>
