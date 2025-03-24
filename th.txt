@@ -84,3 +84,23 @@ arrow function : =>
 
 forEach -->void
 map -->new re
+
+
+task:
+
+styling: header and footer .css
+
+map task 1)
+students id name age marks, gender city courses,
+
+1)25>= color red --> start job
+2)marks <=55 , highlit red --> quit
+3)courses ---> java,python,css 3 eg java 1
+
+2)
+news table
+id title category date
+crime --> row yellow
+sports news ---> blue..
+
+3rd ay your own...
