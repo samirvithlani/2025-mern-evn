@@ -12,7 +12,7 @@ import { Employee } from './components/Employee'
 
 function App() {
   
-    var title= "React JS"
+    var title= "React-js"
     var address = {
       city:"Ahmedabad",
       state:"Gujarat"

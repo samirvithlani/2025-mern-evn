@@ -4,7 +4,7 @@ export const EmployeeList = (props) => {
     console.log("employeeList props",props)
   return (
     <div style={{textAlign:"center"}}>
-        <h1>EMPLOYEE LIST</h1>
+        <h1>EMPLOYEE LIST  - {props.title}</h1>
         {/* //function all buttton */}
         <button onClick={()=>{props.test()}}>TEST in CHILD</button>
     </div>

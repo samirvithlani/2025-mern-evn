@@ -12,7 +12,7 @@ export const Employee = (props) => {
         <h1>EMPLOYEE COMPONENET</h1>
         <button onClick={test}>CLICK</button>
         <button onClick={()=>{test()}}>click 2</button>
-        <EmployeeList test = {test}></EmployeeList>
+        <EmployeeList title = {props.title} test = {test}></EmployeeList>
     </div>
   )
 }
