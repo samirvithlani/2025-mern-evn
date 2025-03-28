@@ -104,3 +104,15 @@ crime --> row yellow
 sports news ---> blue..
 
 3rd ay your own...
+
+
+
+communication between components:
+props:
+	parent compint child comp data...
+	immutable:
+conext api
+redux
+
+
+
