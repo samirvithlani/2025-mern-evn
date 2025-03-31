@@ -116,3 +116,21 @@ redux
 
 
 ml : app --> Employee --> employeeList
+
+hooks:
+state hook
+
+all hook name start use
+useState:
+DOM:
+React js : Virtual dom:
+
+DOM :copy vdom
+
+HTML --> using js --> DOM object update:
+
+Change --> VDOM : -- compare -- >og dom  --> reflect
+
+stateHook
+
+VDOM : documenation

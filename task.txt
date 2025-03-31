@@ -1,0 +1,7 @@
+relevent to usestate demo3
+
+add --> abcd --> random name genderate : 4 char
+array push
+
+every second --> name push -->
+stop --> name add stop
