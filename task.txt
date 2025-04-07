@@ -5,3 +5,8 @@ array push
 
 every second --> name push -->
 stop --> name add stop
+
+react-router-dom v.7
+<BrowserRouter>
+    <Routes>
+        <Route>

@@ -14,6 +14,7 @@ import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
 import { Students } from './components/Students'
 import { MyButton } from './components/MyButton'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   
@@ -31,16 +32,22 @@ function App() {
   return (
    <div style={{textAlign:"center"}}>
     <MyButton name="app" funName = {appFun}></MyButton>
-      <Header title ={title} address = {address}></Header>
+    <Header title ={title} address = {address}></Header>
+
+      <Routes>
+        <Route path='/students' element = {<Students/>}></Route>
+        <Route path='/usestatedemo' element = {<UseStateDemo/>}></Route>
+      </Routes>
+      
       {/* <Employee title = {title}></Employee> */}
       {/* <UseStateDemo2></UseStateDemo2> */}
       {/* <UseStateDemo3></UseStateDemo3> */}
-      <Students/>
+      {/* <Students/> */}
       {/* <Content></Content> */}
       {/* <MapDemo></MapDemo> */}
       {/* <MapDemo2></MapDemo2> */}
       {/* <MapDemo3></MapDemo3> */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
    </div>
   )
 }
