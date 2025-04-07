@@ -12,9 +12,15 @@ import { Employee } from './components/Employee'
 import { UseStateDemo } from './components/UseStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
+import { Students } from './components/Students'
+import { MyButton } from './components/MyButton'
 
 function App() {
   
+
+  const appFun = ()=>{
+    alert("app function..")
+  }
     var title= "React-js"
     var address = {
       city:"Ahmedabad",
@@ -23,16 +29,18 @@ function App() {
   //app --> header
 // p ---> c
   return (
-   <div>
+   <div style={{textAlign:"center"}}>
+    <MyButton name="app" funName = {appFun}></MyButton>
       <Header title ={title} address = {address}></Header>
       {/* <Employee title = {title}></Employee> */}
       {/* <UseStateDemo2></UseStateDemo2> */}
-      <UseStateDemo3></UseStateDemo3>
+      {/* <UseStateDemo3></UseStateDemo3> */}
+      <Students/>
       {/* <Content></Content> */}
       {/* <MapDemo></MapDemo> */}
       {/* <MapDemo2></MapDemo2> */}
       {/* <MapDemo3></MapDemo3> */}
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
    </div>
   )
 }
