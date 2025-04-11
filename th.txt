@@ -143,3 +143,29 @@ react-router-dom v.7
 <BrowserRouter>
     <Routes>
         <Route>
+
+
+navbar : --> menu --> click --> components
+IPL folder -->
+Teams.jsx --> url teams 
+
+navabar --> remove <a href> page refresh ---> avoid <Link> href ==to
+
+plasyers -->
+
+default localhost:5173 --> URL load "/" 
+
+"/" -- >IPL component
+
+wrong url --> error ---> end user --> error page ---> Error404.jsx --> 
+url "/*"
+
+url data pass --> nested routing.,
+
+TEAMS -> 2 team cretae -> click --> teamDetail --> load --> id 
+
+teamdetail/:id --> wildcard char
+
+http://localhost:5173/teamdetail/102 --> teamdetail
+
+101 -->get --> useParams ().id

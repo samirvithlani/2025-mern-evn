@@ -15,6 +15,12 @@ import { UseStateDemo3 } from './components/UseStateDemo3'
 import { Students } from './components/Students'
 import { MyButton } from './components/MyButton'
 import { Route, Routes } from 'react-router-dom'
+import { Navabar } from './components/Navabar'
+import { TeamList } from './components/ipl/TeamList'
+import { Players } from './components/ipl/Players'
+import { IPL } from './components/ipl/IPL'
+import { Error404 } from './components/Error404'
+import { TeamDetail } from './components/ipl/TeamDetail'
 
 function App() {
   
@@ -31,23 +37,21 @@ function App() {
 // p ---> c
   return (
    <div style={{textAlign:"center"}}>
-    <MyButton name="app" funName = {appFun}></MyButton>
-    <Header title ={title} address = {address}></Header>
+    <Navabar></Navabar>
 
       <Routes>
+        <Route path='/' element = {<IPL/>}></Route>
         <Route path='/students' element = {<Students/>}></Route>
         <Route path='/usestatedemo' element = {<UseStateDemo/>}></Route>
+        <Route path='/teams' element ={<TeamList/>}></Route>
+        <Route path='/players' element = {<Players/>}></Route>
+        {/* :id wild card char */}
+        <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
+        {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
+        <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       
-      {/* <Employee title = {title}></Employee> */}
-      {/* <UseStateDemo2></UseStateDemo2> */}
-      {/* <UseStateDemo3></UseStateDemo3> */}
-      {/* <Students/> */}
-      {/* <Content></Content> */}
-      {/* <MapDemo></MapDemo> */}
-      {/* <MapDemo2></MapDemo2> */}
-      {/* <MapDemo3></MapDemo3> */}
-      {/* <Footer></Footer> */}
+     
    </div>
   )
 }
