@@ -169,3 +169,11 @@ teamdetail/:id --> wildcard char
 http://localhost:5173/teamdetail/102 --> teamdetail
 
 101 -->get --> useParams ().id
+
+useMemo : deep copy:
+
+
+memo --> bomb
+useSate -> seleectdGrids
+click --> handlerfunction --> index -->
+match -->random --> index --> match --> bopmb

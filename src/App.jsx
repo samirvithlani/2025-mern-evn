@@ -21,6 +21,7 @@ import { Players } from './components/ipl/Players'
 import { IPL } from './components/ipl/IPL'
 import { Error404 } from './components/Error404'
 import { TeamDetail } from './components/ipl/TeamDetail'
+import { UseMemoDemo } from './components/UseMemoDemo'
 
 function App() {
   
@@ -45,6 +46,7 @@ function App() {
         <Route path='/usestatedemo' element = {<UseStateDemo/>}></Route>
         <Route path='/teams' element ={<TeamList/>}></Route>
         <Route path='/players' element = {<Players/>}></Route>
+        <Route path="/usememo" element ={<UseMemoDemo/>}></Route>
         {/* :id wild card char */}
         <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
