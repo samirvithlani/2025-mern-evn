@@ -43,6 +43,17 @@ export const Navabar = () => {
               usememo
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/findbomb">
+              findbomb
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/formdemo1">
+              FORM DEMO 1
+              </Link>
+            </li>
+
           </ul>
         </div>
       </nav>

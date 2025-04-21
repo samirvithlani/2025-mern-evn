@@ -177,3 +177,21 @@ memo --> bomb
 useSate -> seleectdGrids
 click --> handlerfunction --> index -->
 match -->random --> index --> match --> bopmb
+
+
+
+form :
+
+handleSubmit ---> react hook form
+
+handleSubmit(cb)=>{
+
+	//register ---> object
+	var data = {
+		name:"...",
+		".....
+	}
+	cb(data)
+
+
+}
