@@ -195,3 +195,15 @@ handleSubmit(cb)=>{
 
 
 }
+
+{
+	required:{
+		value:true,message:"age is required *"
+		}
+}
+{
+            required:{
+                value:true,
+                message:"age is required.."
+            }
+}
