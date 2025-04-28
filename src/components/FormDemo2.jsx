@@ -2,7 +2,11 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 export const FormDemo2 = () => {
-    const {register,handleSubmit,formState:{errors}}= useForm()
+    const {register,handleSubmit,formState:{errors}}= useForm({
+        defaultValues:{
+            name:"test"
+        }
+    })
     console.log("errors",errors)//{}
     const submitHandler = (data)=>{
         alert("form subbmited...")
