@@ -26,6 +26,8 @@ import { FindBomb } from './components/FindBomb'
 import { FormDemo1 } from './components/FormDemo1'
 import { FormDemo2 } from './components/FormDemo2'
 import { FormDemo3 } from './components/FormDemo3'
+import { FormDemo4 } from './components/FormDemo4'
+import { FormDemo5 } from './components/FormDemo5'
 
 function App() {
   
@@ -57,6 +59,8 @@ function App() {
         <Route path='/formdemo1'element = {<FormDemo1/>} ></Route>
         <Route path='/formdemo2'element = {<FormDemo2/>} ></Route>
         <Route path='/formdemo3' element = {<FormDemo3/>}></Route>
+        <Route path='/formdemo4' element = {<FormDemo4/>}></Route>
+        <Route path='/formdemo5' element = {<FormDemo5/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
