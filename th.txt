@@ -215,3 +215,27 @@ useEffect : to hanlde side effect in react js we can use useEffect hook:
 chat applicatation:
 
 message :
+
+
+chat array [{message:"hi",sen:"amit":rec:"parth"}] 
+
+chat push[...push]
+
+{
+
+	chat map
+		chat.map((item,index)=>{
+			return(
+				<div key={index}>
+					{item.message}
+				</div>
+			)
+		})
+	}
+
+}
+
+
+loader state...
+loading.....
+5 second loader stop...
