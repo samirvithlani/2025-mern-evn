@@ -207,3 +207,11 @@ handleSubmit(cb)=>{
                 message:"age is required.."
             }
 }
+
+components: life cycle:
+creation [change] destory
+
+useEffect : to hanlde side effect in react js we can use useEffect hook:
+chat applicatation:
+
+message :

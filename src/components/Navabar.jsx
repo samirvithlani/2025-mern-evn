@@ -74,6 +74,11 @@ export const Navabar = () => {
               FORM DEMO 5
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/useeffectdemo">
+              USE EFFECT DEMO
+              </Link>
+            </li>
 
           </ul>
         </div>

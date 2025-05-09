@@ -46,8 +46,9 @@ export const FormDemo3 = () => {
                   {...register(`medicines.${index}.frequency`)}
                 ></input>
               </div>
-              
+              <button onClick={()=>{remove(index)}}>REMOVE</button>  
             </div>
+            
           );
         })}
         <div>

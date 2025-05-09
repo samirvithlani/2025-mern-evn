@@ -44,7 +44,7 @@ export const FormDemo5 = () => {
             <div>
                 <label>NAME</label>
                 <input type='text' {...register("name",validationSchema.nameValidator)}
-                onInput={async(e)=>{
+                onChange={async(e)=>{
                     await trigger("name")
                 }}></input>
                 {errors.name?.message}

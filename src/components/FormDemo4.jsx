@@ -69,6 +69,7 @@ export const FormDemo4 = () => {
         })}
         <br></br>
         <button onClick={()=>{append({ name: "", dosage: "", frequency: "" })}}>ADD MORE</button>
+        <button onClick={()=>{remove(index)}}>REMOVE</button>
         <div>
             <input type="submit" value="submit"></input>
         </div>
