@@ -239,3 +239,43 @@ chat push[...push]
 loader state...
 loading.....
 5 second loader stop...
+
+
+usestate : messages:
+stories  : 
+
+x -->change
+y -->change
+
+
+API : application programming interface:
+java -->react
+
+	unfrom : URL:
+
+URL --> webpage --> API --->data
+
+e comm: REACT --> NODE | java | python
+
+backend --> api --> react --> integrate...
+poducts --> react page -->
+
+
+
+google form:
+
+androif phone : google form :- backend:
+andorind  --> java | [ython ] || database responsible...
+
+form fill : submit ---> console.log --> [API] [backend tech] database
+
+API request methods:
+
+
+fetch ---> 
+axios
+
+
+custom hooks:
+reusablity code...
+

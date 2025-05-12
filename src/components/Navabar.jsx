@@ -27,7 +27,7 @@ export const Navabar = () => {
                 Home <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/teams">
                 TEAMS
               </Link>
@@ -78,8 +78,12 @@ export const Navabar = () => {
               <Link class="nav-link" to="/useeffectdemo">
               USE EFFECT DEMO
               </Link>
+            </li> */}
+            <li class="nav-item">
+              <Link class="nav-link" to="/apidemo1">
+              api demo 1
+              </Link>
             </li>
-
           </ul>
         </div>
       </nav>
