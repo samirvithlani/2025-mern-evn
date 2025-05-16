@@ -279,3 +279,5 @@ axios
 custom hooks:
 reusablity code...
 
+
+create custom hook for post API
