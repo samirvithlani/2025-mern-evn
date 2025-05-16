@@ -33,6 +33,8 @@ import { UseEffectDemo2 } from './components/UseEffectDemo2'
 import { UseEffectDemo3 } from './components/UseEffectDemo3'
 import { ApiDemo1 } from './components/ApiDemo1'
 import { ApiDemo2 } from './components/ApiDemo2'
+import { ApiDemo3 } from './components/ApiDemo3'
+import { ApiDemo4 } from './components/ApiDemo4'
 
 function App() {
   
@@ -68,6 +70,7 @@ function App() {
         <Route path='/formdemo5' element = {<FormDemo5/>}></Route>
         <Route path='/useeffectdemo' element = {<UseEffectDemo3/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo2/>}></Route>
+        <Route path='/apidemo3' element = {<ApiDemo4/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
