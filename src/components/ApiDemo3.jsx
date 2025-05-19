@@ -1,7 +1,11 @@
 import axios from 'axios'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const ApiDemo3 = () => {
+
+  const navigate = useNavigate()
+
 
     const addUser = async()=>{
         const userObj = {
@@ -16,7 +20,8 @@ export const ApiDemo3 = () => {
         console.log(res)//axios object
         console.log(res.data) // api response..
         if(res.status ==201){
-            alert("user added successfully...")
+          navigate("/apidemo1")
+            //alert("user added successfully...")
         }
     }
   return (

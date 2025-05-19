@@ -11,6 +11,10 @@ export const ApiDemo1 = () => {
         getuserData()
     }, [])
 
+    //delete(){
+    //getuserData
+    //}
+
     
     const getuserData = async()=>{
         setisLoading(true)
@@ -39,6 +43,7 @@ export const ApiDemo1 = () => {
                     <th>NAME</th>
                     <th>EMAIL</th>
                     <th>STATUS</th>
+                    <th>ACTION</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,6 +54,9 @@ export const ApiDemo1 = () => {
                         <td>{user.name}</td>
                         <td>{user.email}</td>
                         <td>{user.isActive == true?"Active":"NOt Active"}</td>
+                        <td>
+                            <button onClick={{}} className='btn btn-danger'>DELETE</button>
+                        </td>
                     </tr>
                    }) 
                 }

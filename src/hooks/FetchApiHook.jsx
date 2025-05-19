@@ -2,8 +2,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const useFetchApi = (url) => {
+
   const [res, setres] = useState();
   const [loader, setloader] = useState(false)
+
+  const refetch =async()=>{
+    callApi()
+  }
 
   const callApi = async () => {
     setloader(true)
@@ -11,9 +16,10 @@ export const useFetchApi = (url) => {
     setres(res);
     setloader(false)
   };
+  
 
   useEffect(() => {
     callApi();
   }, []);
-  return {res,loader};
+  return {res,loader,refetch};
 };

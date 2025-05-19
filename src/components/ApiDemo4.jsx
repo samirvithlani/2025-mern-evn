@@ -1,9 +1,13 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer, Zoom } from "react-toastify";
 
 export const ApiDemo4 = () => {
+
+  const navigate = useNavigate()
+
   const { register, handleSubmit } = useForm();
   const submitHandler = async (data) => {
     data.isActive = data.isActive == "true" ? true : false;
@@ -22,6 +26,7 @@ export const ApiDemo4 = () => {
         theme: "dark",
         transition: Zoom,
       });
+      navigate("/apidemo1") //solution timeOut[valid..]
     }
   };
   return (
