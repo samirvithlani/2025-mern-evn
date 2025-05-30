@@ -281,3 +281,5 @@ reusablity code...
 
 
 create custom hook for post API
+
+update: --> new componet -->form display [old data] -->edit -->update 

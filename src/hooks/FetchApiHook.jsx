@@ -6,8 +6,8 @@ export const useFetchApi = (url) => {
   const [res, setres] = useState();
   const [loader, setloader] = useState(false)
 
-  const refetch =async()=>{
-    callApi()
+  const refetch =async(url)=>{
+    callApi(url)
   }
 
   const callApi = async () => {

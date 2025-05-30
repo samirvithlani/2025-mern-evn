@@ -4,18 +4,14 @@ import { Loader } from "./Loader";
 import { useFetchApi } from "../hooks/FetchApiHook";
 import { toast, ToastContainer, Zoom } from "react-toastify";
 import { Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ApiDemo2 = () => {
   const [show, setshow] = useState(false);
   const [user, setuser] = useState({});
-  const userDetail = async (id) => {
-    //get detail by id...
-
-    const res = await axios.get("https://node5.onrender.com/user/user/" + id); //{}
-    console.log(res);
-    setuser(res.data.data);
-    setshow(true);
-  };
+  
+  const [modelLoader, setmodelLoader] = useState(false)
+    
   const handleClose = () => setshow(false);
 
   const { res, loader, refetch } = useFetchApi(
@@ -59,7 +55,9 @@ export const ApiDemo2 = () => {
             <th>ID</th>
             <th>NAME</th>
             <th>EMAIL</th>
+            <th>AGE</th>
             <th>STATUS</th>
+
             <th>ACTION</th>
           </tr>
         </thead>
@@ -69,7 +67,9 @@ export const ApiDemo2 = () => {
               <tr>
                 <td>{user._id}</td>
                 <td>{user.name}</td>
+                
                 <td>{user.email}</td>
+                <td>{user.age}</td>
                 <td>{user.isActive == true ? "Active" : "NOt Active"}</td>
                 <td>
                   <button
@@ -88,7 +88,9 @@ export const ApiDemo2 = () => {
                   >
                     DETAIL
                   </button>
+                  <Link to={`/updateuser/${user._id}`} className="btn btn-warning">UPDATE</Link>
                 </td>
+                
               </tr>
             );
           })}
@@ -100,6 +102,9 @@ export const ApiDemo2 = () => {
           <Modal.Title>USER DETAIL</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+            {
+                modelLoader && <h1>LOading....</h1>
+            }
           Date fetched successfully!!
           <p>Name = {user.name}</p>
           <p>Email ={user.email}</p>

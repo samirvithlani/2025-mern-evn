@@ -35,6 +35,8 @@ import { ApiDemo1 } from './components/ApiDemo1'
 import { ApiDemo2 } from './components/ApiDemo2'
 import { ApiDemo3 } from './components/ApiDemo3'
 import { ApiDemo4 } from './components/ApiDemo4'
+import { ApiDemob1 } from './components/ApiDemob1'
+import { UpdateUser } from './components/UpdateUser'
 
 function App() {
   
@@ -71,6 +73,8 @@ function App() {
         <Route path='/useeffectdemo' element = {<UseEffectDemo3/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo2/>}></Route>
         <Route path='/apidemo3' element = {<ApiDemo4/>}></Route>
+        <Route path='/apidemob1' element = {<ApiDemob1/>}></Route>
+        <Route path='/updateuser/:id' element = {<UpdateUser/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
