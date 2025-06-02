@@ -20,6 +20,6 @@ export const useFetchApi1=(url)=>{
 
     }
     
-    return {data,loading}
+    return {data,loading,callApi}
 
 }

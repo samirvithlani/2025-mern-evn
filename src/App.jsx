@@ -39,6 +39,8 @@ import { ApiDemob1 } from './components/ApiDemob1'
 import { UpdateUser } from './components/UpdateUser'
 import { ToastContainer, Zoom } from 'react-toastify'
 import { ApiDemob2 } from './components/ApiDemob2'
+import { DisplayProduct } from './components/DisplayProduct'
+import { AddManyProducts } from './components/AddManyProducts'
 
 function App() {
   
@@ -77,6 +79,8 @@ function App() {
         <Route path='/apidemo3' element = {<ApiDemo4/>}></Route>
         <Route path='/apidemob1' element = {<ApiDemob2/>}></Route>
         <Route path='/updateuser/:id' element = {<UpdateUser/>}></Route>
+        <Route path='/products' element = {<DisplayProduct/>}></Route>
+        <Route path='/addproducts' element = {<AddManyProducts/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>

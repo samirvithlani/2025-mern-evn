@@ -30,6 +30,10 @@ export const ApiDemo2 = () => {
     }
   };
 
+  
+  
+  
+
   return (
     <div>
       <ToastContainer
@@ -46,6 +50,7 @@ export const ApiDemo2 = () => {
         transition={Zoom}
       />
       <h1>API DEMO 1</h1>
+      
 
       {loader && <Loader></Loader>}
 

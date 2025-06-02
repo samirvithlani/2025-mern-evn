@@ -7,7 +7,7 @@ import { useFetchApi1 } from '../hooks/FetchApiHook2'
 //npm i axios -- fetch
 export const ApiDemob2 = () => {
 
-    const {data,loading}=useFetchApi1("https://node5.onrender.com/user/user/")
+    const {data,loading,callApi}=useFetchApi1("https://node5.onrender.com/user/user/")
 
     const deleteUser =async(id)=>{
 
@@ -15,7 +15,8 @@ export const ApiDemob2 = () => {
       const res = await axios.delete(`https://node5.onrender.com/user/user/${id}`)
       console.log(res)
       if(res.status == 204){
-        getUserData()
+        //getUserData()
+        callApi()
       }
     }
     
