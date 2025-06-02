@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 export const UpdateUser = () => {
     const id = useParams().id;
@@ -14,8 +15,13 @@ export const UpdateUser = () => {
     const submitHandler = async(data) => {
         console.log(data)
         delete data._id; //remove id from data
+        try{
         const res = await axios.put("https://node5.onrender.com/user/user/"+id, data);
         console.log(res);
+        }catch(err){
+            toast.error("Something went wrong while updating user..")
+            //alert("Something went wrong while updating user..")
+        }
     }
   return (
     <div>

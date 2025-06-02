@@ -37,6 +37,7 @@ import { ApiDemo3 } from './components/ApiDemo3'
 import { ApiDemo4 } from './components/ApiDemo4'
 import { ApiDemob1 } from './components/ApiDemob1'
 import { UpdateUser } from './components/UpdateUser'
+import { ToastContainer, Zoom } from 'react-toastify'
 
 function App() {
   
@@ -78,6 +79,20 @@ function App() {
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Zoom}
+      />
       
      
    </div>
