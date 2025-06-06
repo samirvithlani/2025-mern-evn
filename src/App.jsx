@@ -41,6 +41,7 @@ import { ToastContainer, Zoom } from 'react-toastify'
 import { ApiDemob2 } from './components/ApiDemob2'
 import { DisplayProduct } from './components/DisplayProduct'
 import { AddManyProducts } from './components/AddManyProducts'
+import { Compnay } from './components/Company/Compnay'
 
 function App() {
   
@@ -81,6 +82,7 @@ function App() {
         <Route path='/updateuser/:id' element = {<UpdateUser/>}></Route>
         <Route path='/products' element = {<DisplayProduct/>}></Route>
         <Route path='/addproducts' element = {<AddManyProducts/>}></Route>
+        <Route path='/compnay' element = {<Compnay/>}></Route>
         {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
         <Route path='/*' element ={<Error404/>}></Route>
       </Routes>

@@ -283,3 +283,14 @@ reusablity code...
 create custom hook for post API
 
 update: --> new componet -->form display [old data] -->edit -->update 
+
+
+1 comp ->2
+props: a --> b ---> c-->....z
+	 : props drillling:
+context:
+	    globle store --->data put -->data access
+
+        x -->water --> --> ---> z
+
+redux

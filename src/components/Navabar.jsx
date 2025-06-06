@@ -105,6 +105,11 @@ export const Navabar = () => {
               addproducts
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/compnay">
+              COMPNAY
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
