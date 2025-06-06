@@ -294,3 +294,15 @@ context:
         x -->water --> --> ---> z
 
 redux
+
+
+
+theme : ---> ThemeCOntext --> object -->app.js -->
+
+themeContect ---->
+App.js
+var theme,setTheme  ="dark
+
+	<ThemeContext.Provider value={theme,setThem}>
+		
+	</ThemeContext.Provider>
