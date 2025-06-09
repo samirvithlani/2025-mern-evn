@@ -306,3 +306,32 @@ var theme,setTheme  ="dark
 	<ThemeContext.Provider value={theme,setThem}>
 		
 	</ThemeContext.Provider>
+
+
+REDUX:
+props : parent child -->a --> b ---> c --->d
+context :  x --> y --> z --->p
+
+statement
+redux: redux toolkit
+
+
+
+factory  ----> wh[] goods  --->market
+store: 
+
+
+bank balance: 1000 prv state  - 100 --> 900 next state
+
+reducer : reducer is an pure function that takes the previous state and an 
+		  action, and returns the next state.
+
+
+action :  action in redux is a plain object that describes a change in the state of the application.
+		  action is an object with a type property and an optional payload property.
+		  type,action
+
+
+
+
+

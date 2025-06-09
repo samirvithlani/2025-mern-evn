@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../ThemeContext";
 
 export const Navabar = () => {
+  const {isDark,lightTheme,darkTheme,setisDark} = useContext(ThemeContext)
+  console.log("is dark...",isDark)
   return (
-    <div>
+    <div style={isDark ? darkTheme : lightTheme}>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           Navbar
         </a>
+        <button onClick={()=>{setisDark(!isDark)}} className="btn btn-primary">
+          {
+            isDark ? "Light Mode" : "Dark Mode"
+          }
+        </button>
         <button
           class="navbar-toggler"
           type="button"
@@ -108,6 +116,11 @@ export const Navabar = () => {
             <li class="nav-item">
               <Link class="nav-link" to="/compnay">
               COMPNAY
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/product">
+              PRODUCTS
               </Link>
             </li>
           </ul>
