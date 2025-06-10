@@ -6,3 +6,9 @@ array push
 every second --> name push -->
 stop --> name add stop
 
+withdraw:
+
+cartComponent --> display all  item in cart
+                --->select ---> removeAction ---> store -->
+hint: fetch data from store only...                
+cartSlice --> remove item from cart:

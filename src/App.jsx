@@ -44,6 +44,7 @@ import { AddManyProducts } from "./components/AddManyProducts";
 import { Compnay } from "./components/Company/Compnay";
 import { ThemeContext } from "./ThemeContext";
 import { ProductComponent } from "./components/ProductComponent";
+import { BankComponent } from "./components/BankComponent";
 
 function App() {
   const appFun = () => {
@@ -93,6 +94,7 @@ function App() {
           <Route path="/addproducts" element={<AddManyProducts />}></Route>
           <Route path="/compnay" element={<Compnay />}></Route>
           <Route path="/product" element = {<ProductComponent/>}></Route>
+          <Route path="/bank" element = {<BankComponent/>}></Route>
           {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>

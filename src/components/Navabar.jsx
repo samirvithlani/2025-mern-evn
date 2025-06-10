@@ -1,10 +1,19 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../ThemeContext";
+import { useSelector } from "react-redux";
 
 export const Navabar = () => {
   const {isDark,lightTheme,darkTheme,setisDark} = useContext(ThemeContext)
   console.log("is dark...",isDark)
+
+  // const state = useSelector((state)=>state)
+  // console.log("state",state) //store...
+
+  //state.reducerName.initalState
+  const cartState  = useSelector((state)=>state.cart.cart)
+  const bankState = useSelector((state)=>state.bank.balance)
+
   return (
     <div style={isDark ? darkTheme : lightTheme}>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -123,6 +132,17 @@ export const Navabar = () => {
               PRODUCTS
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/bank">
+              BANK
+              </Link>
+            </li>
+            <li class="nav-item">
+              <h4 style={{color:"blue"}}>{cartState.length}</h4>
+              </li>
+              <li class="nav-item">
+              <h4 style={{color:"red"}}>{bankState}</h4>
+              </li>
           </ul>
         </div>
       </nav>
