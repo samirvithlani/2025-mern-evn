@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const bankSlice = createSlice({
     name:"bank",
     initialState:{
-        balance:0,
+    balance:0,
     },
     reducers:{
         depositAction:(state,action)=>{

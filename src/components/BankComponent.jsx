@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { depositAction } from '../redux/bankSlice'
+import { fetchApi } from '../redux/ContentSlice'
 
 export const BankComponent = () => {
     const [depositAmount, setdepositAmount] = useState(0)
@@ -10,6 +11,13 @@ export const BankComponent = () => {
 
         dispatch(depositAction(parseInt(depositAmount)))
     }
+
+    useEffect(() => {
+      
+        dispatch(fetchApi())
+    
+    }, [])
+    
 
   return (
     <div style={{textAlign:"center"}}>
