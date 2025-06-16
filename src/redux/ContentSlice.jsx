@@ -12,7 +12,7 @@ const initialState={
 export const fetchApi = createAsyncThunk(
     "content/fetchContent",
     async()=>{
-        console.log("fetch api called....")
+        console.log("fetch api called....",)
         const res  = await axios.get("https://node5.onrender.com/user/user")
         const data = res.data.data
         return data;

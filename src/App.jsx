@@ -45,6 +45,8 @@ import { Compnay } from "./components/Company/Compnay";
 import { ThemeContext } from "./ThemeContext";
 import { ProductComponent } from "./components/ProductComponent";
 import { BankComponent } from "./components/BankComponent";
+import { Notifications } from "./components/Notifications";
+import { NotificationList } from "./components/NotificationList";
 
 function App() {
   const appFun = () => {
@@ -95,6 +97,8 @@ function App() {
           <Route path="/compnay" element={<Compnay />}></Route>
           <Route path="/product" element = {<ProductComponent/>}></Route>
           <Route path="/bank" element = {<BankComponent/>}></Route>
+          <Route path="/notifications" element = {<Notifications/>}></Route>
+          <Route path="/notificationList" element = {<NotificationList/>}></Route>
           {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>

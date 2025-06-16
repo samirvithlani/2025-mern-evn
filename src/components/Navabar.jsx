@@ -13,6 +13,8 @@ export const Navabar = () => {
   //state.reducerName.initalState
   const cartState  = useSelector((state)=>state.cart.cart)
   const bankState = useSelector((state)=>state.bank.balance)
+  const notificationState = useSelector((state)=>state.notification.notifications)
+  //array....
 
   return (
     <div style={isDark ? darkTheme : lightTheme}>
@@ -138,10 +140,24 @@ export const Navabar = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link" to="/notifications">
+              NOTIFICATIONS
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/notificationList">
+              NOTIFICATIONS LIST
+              </Link>
+            </li>
+
+            <li class="nav-item">
               <h4 style={{color:"blue"}}>{cartState.length}</h4>
               </li>
               <li class="nav-item">
               <h4 style={{color:"red"}}>{bankState}</h4>
+              </li>
+              <li class="nav-item">
+              <h4 style={{color:"yellow" ,margin:10}}>{notificationState.length}</h4>
               </li>
           </ul>
         </div>

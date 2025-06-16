@@ -332,6 +332,14 @@ action :  action in redux is a plain object that describes a change in the state
 		  type,action
 
 
+2 comp relatonship:
+
+app.js
+	navabar  : store --> comp
+	products : action --> store --->
+	store.js : -->
+			-->reducers
+	redux -->reducers [slice [reducers,action]]		
 
 
 
