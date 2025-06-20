@@ -149,6 +149,11 @@ export const Navabar = () => {
               NOTIFICATIONS LIST
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/login">
+              LOGIN
+              </Link>
+            </li>
 
             <li class="nav-item">
               <h4 style={{color:"blue"}}>{cartState.length}</h4>

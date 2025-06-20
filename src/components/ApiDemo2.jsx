@@ -17,6 +17,7 @@ export const ApiDemo2 = () => {
   const { res, loader, refetch } = useFetchApi(
     "https://node5.onrender.com/user/user"
   ); //[]
+  console.log(res)
   const deleteUser = async (id) => {
     const res = await axios.delete(
       "https://node5.onrender.com/user/user/" + id
@@ -62,12 +63,13 @@ export const ApiDemo2 = () => {
             <th>EMAIL</th>
             <th>AGE</th>
             <th>STATUS</th>
+            <th>PASSWORD</th>
 
             <th>ACTION</th>
           </tr>
         </thead>
         <tbody>
-          {res?.data?.data?.map((user) => {
+          {res?.map((user) => {
             return (
               <tr>
                 <td>{user._id}</td>
@@ -94,6 +96,9 @@ export const ApiDemo2 = () => {
                     DETAIL
                   </button>
                   <Link to={`/updateuser/${user._id}`} className="btn btn-warning">UPDATE</Link>
+                </td>
+                <td>
+                  {user.password}
                 </td>
                 
               </tr>

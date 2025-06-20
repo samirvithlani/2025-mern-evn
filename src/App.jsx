@@ -47,6 +47,8 @@ import { ProductComponent } from "./components/ProductComponent";
 import { BankComponent } from "./components/BankComponent";
 import { Notifications } from "./components/Notifications";
 import { NotificationList } from "./components/NotificationList";
+import { Login } from "./Login";
+import ProtectedRoutes from "./hooks/ProtecteRoutes";
 
 function App() {
   const appFun = () => {
@@ -73,6 +75,9 @@ function App() {
         <Navabar></Navabar>
 
         <Routes>
+
+          <Route element = {<ProtectedRoutes/>}>
+
           <Route path="/" element={<IPL />}></Route>
           <Route path="/students" element={<Students />}></Route>
           <Route path="/usestatedemo" element={<UseStateDemo />}></Route>
@@ -99,6 +104,10 @@ function App() {
           <Route path="/bank" element = {<BankComponent/>}></Route>
           <Route path="/notifications" element = {<Notifications/>}></Route>
           <Route path="/notificationList" element = {<NotificationList/>}></Route>
+          </Route>
+
+
+          <Route path="/login" element = {<Login/>}></Route>
           {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>
