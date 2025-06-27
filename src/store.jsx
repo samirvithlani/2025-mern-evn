@@ -22,6 +22,9 @@ import { combineReducers } from "@reduxjs/toolkit";
 import storage from "redux-persist/lib/storage"
 import { persistReducer, persistStore, PURGE } from "redux-persist";
 import authReducer from "./redux/AuthSlice"
+import searchReducer from "./redux/SearchSlice"
+import createSagaMiddleware from "redux-saga";
+import rootSaga from "./redux/sagas";
 
 
 // export const store = configureStore({
@@ -36,7 +39,8 @@ const rootReducer = combineReducers({
     bank:bankReducer,
     content:contentReducer,
     notification:notificationreducer,
-    auth:authReducer
+    auth:authReducer,
+    search:searchReducer
 
 })
 
@@ -45,15 +49,22 @@ const persistConfig ={
     storage,
     whitelist:['bank','auth']
 }
+const sagaMiddleware = createSagaMiddleware()
+
 export const store = configureStore({
     reducer: persistReducer(persistConfig,rootReducer),
-    middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [PURGE],
-      },
-    }),
+     middleware:(getDefault)=>{
+      return getDefault({thunk:false}).concat(sagaMiddleware)
+     } 
+
+    // middleware: (getDefaultMiddleware) =>
+    // getDefaultMiddleware({
+    //   serializableCheck: {
+    //     ignoredActions: [PURGE],
+    //   },
+    // }),
 
 })
+sagaMiddleware.run(rootSaga)
 export const persistor = persistStore(store)
 

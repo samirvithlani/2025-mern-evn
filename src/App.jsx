@@ -49,6 +49,7 @@ import { Notifications } from "./components/Notifications";
 import { NotificationList } from "./components/NotificationList";
 import { Login } from "./Login";
 import ProtectedRoutes from "./hooks/ProtecteRoutes";
+import { SearchInput } from "./components/SearchInput";
 
 function App() {
   const appFun = () => {
@@ -104,6 +105,7 @@ function App() {
           <Route path="/bank" element = {<BankComponent/>}></Route>
           <Route path="/notifications" element = {<Notifications/>}></Route>
           <Route path="/notificationList" element = {<NotificationList/>}></Route>
+          <Route path="/searchinput" element  ={<SearchInput/>}></Route>
           </Route>
 
 

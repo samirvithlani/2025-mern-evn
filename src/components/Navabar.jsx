@@ -150,6 +150,11 @@ export const Navabar = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link" to="/searchinput">
+              SEARCH INPUT
+              </Link>
+            </li>
+            <li class="nav-item">
               <Link class="nav-link" to="/login">
               LOGIN
               </Link>

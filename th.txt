@@ -343,3 +343,4 @@ app.js
 
 
 
+store -->rootSaga -> action -->input
