@@ -12,3 +12,24 @@ cartComponent --> display all  item in cart
                 --->select ---> removeAction ---> store -->
 hint: fetch data from store only...                
 cartSlice --> remove item from cart:
+
+
+MUI TASK:
+rating:
+controlled rating 
+1 star worst
+2 star ok
+3 star good
+4 star very good
+5 star excellent
+
+
+slider: component sliderDemo
+
+slider -----------------------------------
+slidet 0 --> 100 --> product filter
+0 -->5000 producrts--->
+products api call:
+
+
+switch: implment in toggle thene

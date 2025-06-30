@@ -50,6 +50,7 @@ import { NotificationList } from "./components/NotificationList";
 import { Login } from "./Login";
 import ProtectedRoutes from "./hooks/ProtecteRoutes";
 import { SearchInput } from "./components/SearchInput";
+import { ButtonDemo } from "./mui/ButtonDemo";
 
 function App() {
   const appFun = () => {
@@ -110,6 +111,7 @@ function App() {
 
 
           <Route path="/login" element = {<Login/>}></Route>
+          <Route path="/muibutton" element = {<ButtonDemo/>}></Route>
           {/* <Route path='/*' element ={<h1>404</h1>}></Route> */}
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>
